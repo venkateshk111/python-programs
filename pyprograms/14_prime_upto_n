@@ -1,0 +1,25 @@
+# python program to print prime numbers upto n
+
+n = int(input('Enter a Number: '))
+
+m = 2
+
+while m <= n :
+    is_prime = True
+    for i in range(2,m) :
+        if m % i == 0 :
+            is_prime = False
+            break
+    if is_prime == True :
+        print(m)
+    m = m+1
+
+
+
+
+
+
+
+
+       
+

@@ -1,0 +1,15 @@
+# python program to find if give number is prime or not
+
+def is_prime(n):
+    if n < 1 :
+        print('Given number {} is NOT PRIME number' .format(n))
+    else :
+        for i in range(2,n) :
+            if n % i == 0 :
+                print('Given number {} is NOT PRIME number' .format(n))
+                break
+        else :
+            print('Given number {} is PRIME number' .format(n))
+        
+n = int(input('Enter a Number: '))
+is_prime(n)
